@@ -35,7 +35,6 @@ function iniciaRelogio() {
 }
 
 function getTimeFromSeconds(segundos) {
-  // multiplica os segundos por 1000 pois o new Date pega em Milliseconds
   const data = new Date(segundos * 1000); 
   return data.toLocaleTimeString('pt-BR', {
     hour12: false,
